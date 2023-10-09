@@ -1,0 +1,267 @@
+RangeIndex: 6390 entries, 0 to 6389
+Data columns (total 13 columns):
+ #   Column          Non-Null Count  Dtype  
+---  ------          --------------  -----  
+ 0   INDICATOR       6390 non-null   object 
+ 1   UNIT            6390 non-null   object 
+ 2   UNIT_NUM        6390 non-null   int64  
+ 3   STUB_NAME       6390 non-null   object 
+ 4   STUB_NAME_NUM   6390 non-null   int64  
+ 5   STUB_LABEL      6390 non-null   object 
+ 6   STUB_LABEL_NUM  6390 non-null   float64
+ 7   YEAR            6390 non-null   int64  
+ 8   YEAR_NUM        6390 non-null   int64  
+ 9   AGE             6390 non-null   object 
+ 10  AGE_NUM         6390 non-null   float64
+ 11  ESTIMATE        5484 non-null   float64
+ 12  FLAG            906 non-null    object 
+dtypes: float64(3), int64(4), object(6)
+memory usage: 649.1+ KB
+None
+                 INDICATOR                                               UNIT  UNIT_NUM STUB_NAME  ...       AGE AGE_NUM  ESTIMATE  FLAG
+0  Death rates for suicide  Deaths per 100,000 resident population, age-ad...         1     Total  ...  All ages     0.0      13.2   NaN
+1  Death rates for suicide  Deaths per 100,000 resident population, age-ad...         1     Total  ...  All ages     0.0      12.5   NaN
+2  Death rates for suicide  Deaths per 100,000 resident population, age-ad...         1     Total  ...  All ages     0.0      13.1   NaN
+3  Death rates for suicide  Deaths per 100,000 resident population, age-ad...         1     Total  ...  All ages     0.0      12.2   NaN
+4  Death rates for suicide  Deaths per 100,000 resident population, age-ad...         1     Total  ...  All ages     0.0      12.3   NaN
+
+[5 rows x 13 columns]
+          UNIT_NUM  STUB_NAME_NUM  STUB_LABEL_NUM         YEAR     YEAR_NUM      AGE_NUM     ESTIMATE
+count  6390.000000    6390.000000     6390.000000  6390.000000  6390.000000  6390.000000  5484.000000
+mean      1.872926       4.621909        4.686775  1997.525822    22.692019     2.712207    13.709810
+std       0.333081       2.031777        1.829624    14.937451    12.286033     1.932280    11.531805
+min       1.000000       0.000000        0.000000  1950.000000     1.000000     0.000000     0.300000
+25%       2.000000       3.000000        3.230000  1988.000000    12.000000     0.000000     5.000000
+50%       2.000000       5.000000        5.125100  1999.000000    23.000000     3.000000    10.500000
+75%       2.000000       6.000000        6.153000  2009.000000    33.000000     4.100000    19.500000
+max       2.000000      11.000000        7.235000  2018.000000    42.000000     6.000000    74.800000
+
+Column:  INDICATOR
+INDICATOR
+Death rates for suicide    6390
+Name: count, dtype: int64
+
+Column:  UNIT
+UNIT
+Deaths per 100,000 resident population, crude           5578
+Deaths per 100,000 resident population, age-adjusted     812
+Name: count, dtype: int64
+
+Column:  UNIT_NUM
+UNIT_NUM
+2    5578
+1     812
+Name: count, dtype: int64
+
+Column:  STUB_NAME
+STUB_NAME
+Sex, age and race                                      1596
+Sex, age and race and Hispanic origin                  1328
+Sex and age                                            1176
+Sex and race                                            672
+Sex and race and Hispanic origin                        664
+Age                                                     588
+Sex                                                     168
+Total                                                    84
+Sex, age and race and Hispanic origin (Single race)      48
+Sex, age and race (Single race)                          30
+Sex and race and Hispanic origin (Single race)           24
+Sex and race (Single race)                               12
+Name: count, dtype: int64
+
+Column:  STUB_NAME_NUM
+STUB_NAME_NUM
+5     1596
+7     1328
+3     1176
+4      672
+6      664
+1      588
+2      168
+0       84
+11      48
+9       30
+10      24
+8       12
+Name: count, dtype: int64
+
+Column:  STUB_LABEL
+STUB_LABEL
+Female: Black or African American                                                               87
+Male: Hispanic or Latino: All races                                                             86
+Female: Hispanic or Latino: All races                                                           86
+Male: White                                                                                     86
+Male: American Indian or Alaska Native                                                          86
+                                                                                                ..
+Male: Not Hispanic or Latino: Native Hawaiian or Other Pacific Islander: 15-24 years             1
+Male: Not Hispanic or Latino: Asian: 45-64 years                                                 1
+Male: Not Hispanic or Latino: Asian: 25-44 years                                                 1
+Male: Not Hispanic or Latino: Asian: 15-24 years                                                 1
+Female: Not Hispanic or Latino: Native Hawaiian or Other Pacific Islander: 65 years and over     1
+Name: count, Length: 161, dtype: int64
+
+Column:  STUB_LABEL_NUM
+STUB_LABEL_NUM
+4.220    87
+6.130    86
+6.230    86
+4.110    86
+4.130    86
+         ..
+6.171     1
+6.163     1
+6.162     1
+6.161     1
+6.274     1
+Name: count, Length: 161, dtype: int64
+
+Column:  YEAR
+YEAR
+2018    276
+2008    162
+2000    162
+2001    162
+2002    162
+2003    162
+2004    162
+2005    162
+2006    162
+2007    162
+2009    162
+2010    162
+2011    162
+2012    162
+2013    162
+2014    162
+2015    162
+2016    162
+2017    162
+1999    162
+1960    138
+1950    138
+1997    138
+1996    138
+1970    138
+1980    138
+1981    138
+1982    138
+1983    138
+1984    138
+1985    138
+1986    138
+1987    138
+1988    138
+1989    138
+1990    138
+1991    138
+1992    138
+1993    138
+1994    138
+1995    138
+1998    138
+Name: count, dtype: int64
+
+Column:  YEAR_NUM
+YEAR_NUM
+42    276
+32    162
+24    162
+25    162
+26    162
+27    162
+28    162
+29    162
+30    162
+31    162
+33    162
+34    162
+35    162
+36    162
+37    162
+38    162
+39    162
+40    162
+41    162
+23    162
+2     138
+1     138
+21    138
+20    138
+3     138
+4     138
+5     138
+6     138
+7     138
+8     138
+9     138
+10    138
+11    138
+12    138
+13    138
+14    138
+15    138
+16    138
+17    138
+18    138
+19    138
+22    138
+Name: count, dtype: int64
+
+Column:  AGE
+AGE
+All ages             1624
+15-24 years           812
+25-44 years           812
+45-64 years           812
+65 years and over     812
+65-74 years           212
+75-84 years           212
+85 years and over     212
+10-14 years           126
+15-19 years           126
+20-24 years           126
+25-34 years           126
+35-44 years           126
+45-54 years           126
+55-64 years           126
+Name: count, dtype: int64
+
+Column:  AGE_NUM
+AGE_NUM
+0.0    1624
+2.0     812
+3.0     812
+4.0     812
+5.0     812
+5.1     212
+5.2     212
+6.0     212
+1.0     126
+2.1     126
+2.2     126
+3.1     126
+3.2     126
+4.1     126
+4.2     126
+Name: count, dtype: int64
+
+Column:  ESTIMATE
+ESTIMATE
+4.3     54
+2.1     50
+4.2     49
+4.0     47
+1.8     45
+        ..
+44.1     1
+48.2     1
+0.4      1
+32.8     1
+60.7     1
+Name: count, Length: 529, dtype: int64
+
+Column:  FLAG
+FLAG
+...    645
+*      261
+Name: count, dtype: int64
